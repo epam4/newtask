@@ -20,7 +20,7 @@ header {
   background-size: contain;
   background-position: right;
   background-repeat:no-repeat;
-  height: 100vh;  
+  height: 100vh;
 
 }
 header .container {
@@ -215,7 +215,7 @@ header .content .img p {
   display: flex;
   align-items: center;
   padding: 0 0.6rem;
-  
+
 }
 
 .contact .form .message {
@@ -278,6 +278,143 @@ header .content .img p {
   margin: 3rem auto 0 auto;
   cursor: pointer;
   background-color: transparent;
-
 }
- 
+
+
+/* Solya Start */
+
+/* SKILLS CONTAINER STYLES HERE */
+.skills {
+  width: 100%;
+  margin: auto;
+  min-height: 220vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+/* SKILLS TEXT BOX AND TEXT STYLES */
+.skills-text {
+  width: 35vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 8px solid #000000;
+}
+.skills-text p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.35538em;
+  color: #000000;
+}
+/* SKILSS BOXES STYLE */
+.skills-boxes {
+  width: 75%;
+}
+/* SKILLS OPTION NAME STYLES */
+.skills-boxes h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.18538em;
+  color: #000000;
+  margin: 75px 0;
+  display: inline-block;
+  margin-left: 6vw;
+}
+/* SKILLS NAME STYLES HERE */
+.skills-boxes p {
+  display: block;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.13538em;
+  color: #000000;
+}
+/* DIFFERENT STYLE IN FIRST SKILLS IMG BOX */
+.using-now_img_1 {
+  margin-bottom: 65px;
+}
+/* GENERAL BOX IS SKILLS IMG BOX STYLES HERE*/
+.skills-img-box {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+/* SKILLS IMG AND TEXT CONTAINER HERE */
+.tech {
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* IN IMG BOX PARAGRAF MARGIN STYLES */
+.using-now_img_1 p {
+  margin-top: 17px;
+}
+.using-now_img_2 p {
+  margin-top: 36px;
+}
+.learning_img p {
+  margin-top: 22px;
+}
+.other-skills_img p {
+  margin-top: 28px;
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .skills-boxes {
+    width: 100%;
+  }
+  .skills-text {
+    width: 60vw;
+    height: 20vh;
+  }
+  .skills-text p {
+    font-size: 27px;
+    line-height: 30px;
+  }
+  .tech {
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+}
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  .skills-boxes {
+    width: 100%;
+  }
+  .tech {
+    width: 50%;
+    margin-bottom: 5vh;
+  }
+  .skills-text p {
+    font-size: 29px;
+    line-height: 30px;
+  }
+}
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .skills-boxes {
+    width: 90%;
+  }
+  .tech {
+    width: 25%;
+  }
+}
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .skills-boxes {
+    width: 80%;
+  }
+  .tech {
+    width: 25%;
+  }
+}
+/* Solya Finished */

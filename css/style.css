@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@800;900&family=Roboto:wght@900&family=Work+Sans:wght@400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@800;900&family=Roboto:wght@900&family=Work+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 *,
 *::before,
 *::after {
@@ -8,20 +8,19 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: 'Playfair Display', serif;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 /* header start */
 header {
-  background: url('../assets/icon/Rectangle\ 67.png');
+  background: url("../assets/icon/Rectangle\ 67.png");
   background-color: rgba(215, 215, 215, 1);
   background-size: contain;
   background-position: right;
-  background-repeat:no-repeat;
-  height: 100vh;  
-
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 header .container {
   width: 80%;
@@ -43,13 +42,13 @@ header ul li {
 header ul li a {
   color: rgba(255, 255, 255, 1);
   font-size: 17px;
-  padding: 20px ;
+  padding: 20px;
 }
-header ul li a:hover{
+header ul li a:hover {
   color: rgb(209, 205, 205);
 }
 header nav button {
-  background: #FFFFFF;
+  background: #ffffff;
   box-sizing: border-box;
   border-radius: 30px;
   font-size: 15px;
@@ -60,7 +59,7 @@ header nav button:hover {
   background-color: #afaeae;
   color: white;
 }
-select{
+select {
   background-color: white;
   display: inline-block;
   padding: 10px;
@@ -71,7 +70,7 @@ select{
 
 header .content {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   height: 100%;
 }
@@ -92,14 +91,14 @@ header .content .text p {
   padding-bottom: 100px;
 }
 header .content .icons img {
-  background: #C4C4C4;
+  background: #c4c4c4;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 50px;
   padding: 10px;
   margin-right: 10px;
 }
 header .content .icons img:hover {
-  transform:scale(1.1);
+  transform: scale(1.1);
 }
 header .content .img {
   position: relative;
@@ -117,7 +116,8 @@ header .content .img p {
 /* header finished */
 /* berries start */
 .berries {
-  background: linear-gradient(#1d1d1dd7, #1d1d1dd5),url('../assets//icon/Logo\ ITB.png');
+  background: linear-gradient(#1d1d1dd7, #1d1d1dd5),
+    url("../assets//icon/Logo\ ITB.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -136,28 +136,31 @@ header .content .img p {
   font-size: 15px;
 }
 .berries a {
-  padding:  5px 15px;
-  color: #FFFFFF;
+  padding: 5px 15px;
+  color: #ffffff;
   border-right: 2px solid white;
   border-left: 2px solid white;
-  border-top:2px solid #1d1d1d44;
+  border-top: 2px solid #1d1d1d44;
   border-bottom: 2px solid #1d1d1d96;
   transition: 1s all;
 }
 .berries a:hover {
   border-bottom: 2px solid white;
   border-top: 2px solid white;
-  border-left:2px solid #1d1d1dd5;
+  border-left: 2px solid #1d1d1dd5;
   border-right: 2px solid #1d1d1da4;
 }
 /* berries finished */
 
-
-
 .contact {
   padding: 40px 0;
   font-family: sans-serif;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0) 0%, rgba(0, 0, 0, 0.16) 100%), #FFFFFF;
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(26, 21, 21, 0) 0%,
+      rgba(0, 0, 0, 0.16) 100%
+    ),
+    #ffffff;
 }
 
 .contact-head {
@@ -215,7 +218,6 @@ header .content .img p {
   display: flex;
   align-items: center;
   padding: 0 0.6rem;
-  
 }
 
 .contact .form .message {
@@ -235,7 +237,6 @@ header .content .img p {
   font-size: 1rem;
   line-height: 140%;
   background-color: transparent;
-
 }
 
 .contact .form .message textarea::placeholder {
@@ -278,6 +279,140 @@ header .content .img p {
   margin: 3rem auto 0 auto;
   cursor: pointer;
   background-color: transparent;
-
 }
- 
+
+/* SKILLS CONTAINER STYLES HERE */
+.skills {
+  width: 100%;
+  margin: auto;
+  min-height: 220vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+/* SKILLS TEXT BOX AND TEXT STYLES */
+.skills-text {
+  width: 35vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 8px solid #000000;
+}
+.skills-text p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.35538em;
+  color: #000000;
+}
+/* SKILSS BOXES STYLE */
+.skills-boxes {
+  width: 75%;
+}
+/* SKILLS OPTION NAME STYLES */
+.skills-boxes h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.18538em;
+  color: #000000;
+  margin: 75px 0;
+  display: inline-block;
+  margin-left: 6vw;
+}
+/* SKILLS NAME STYLES HERE */
+.skills-boxes p {
+  display: block;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.13538em;
+  color: #000000;
+}
+/* DIFFERENT STYLE IN FIRST SKILLS IMG BOX */
+.using-now_img_1 {
+  margin-bottom: 65px;
+}
+/* GENERAL BOX IS SKILLS IMG BOX STYLES HERE*/
+.skills-img-box {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+/* SKILLS IMG AND TEXT CONTAINER HERE */
+.tech {
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* IN IMG BOX PARAGRAF MARGIN STYLES */
+.using-now_img_1 p {
+  margin-top: 17px;
+}
+.using-now_img_2 p {
+  margin-top: 36px;
+}
+.learning_img p {
+  margin-top: 22px;
+}
+.other-skills_img p {
+  margin-top: 28px;
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .skills-boxes {
+    width: 100%;
+  }
+  .skills-text {
+    width: 60vw;
+    height: 20vh;
+  }
+  .skills-text p {
+    font-size: 27px;
+    line-height: 30px;
+  }
+  .tech {
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+}
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  .skills-boxes {
+    width: 100%;
+  }
+  .tech {
+    width: 50%;
+    margin-bottom: 5vh;
+  }
+  .skills-text p {
+    font-size: 29px;
+    line-height: 30px;
+  }
+}
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .skills-boxes {
+    width: 90%;
+  }
+  .tech {
+    width: 25%;
+  }
+}
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .skills-boxes {
+    width: 80%;
+  }
+  .tech {
+    width: 25%;
+  }
+}
+/* Solya Finished */

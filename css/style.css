@@ -217,20 +217,29 @@ header .content .img p {
   padding-top: 5rem;
 }
 
-.container {
+.container__about {
   width: 93%;
   margin: 0 auto;
 }
 
-.about-me__info > div {
-  flex: 1;
+.about-me__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  
 }
-
+.about-me__info-left{
+  margin: 90px 0; 
+}
 .about-me__title {
   font-size: 1.375rem;
   font-weight: 700;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .about-me__subtitle {

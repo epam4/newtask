@@ -152,6 +152,123 @@ header .content .img p {
 }
 /* berries finished */
 
+/* About me section styles */
+.about-me__button {
+  padding-top: 6.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me__action {
+  width: 400px;
+  height: 105px;
+  border: 8px solid #000000;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  background: none;
+  letter-spacing: 5px;
+}
+
+.about-me__parag {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me__description   {
+  padding-top: 4.375rem;
+  width: 760px;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-me__explore-main {
+  display: flex;
+  justify-content: center;
+  padding-top: 3.125rem;
+}
+
+.about-me__exploreone {
+  width: 140px;
+  height: 25px;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
+}
+
+.about-me__explore {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.about-me__img {
+  padding-top: 5.3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me__info {
+  display: flex;
+  padding-top: 5rem;
+}
+
+.container {
+  width: 93%;
+  margin: 0 auto;
+}
+
+.about-me__info > div {
+  flex: 1;
+}
+
+.about-me__title {
+  font-size: 1.375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-me__subtitle {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  width: 70%;
+  font-family: 'OpenSans', sans-serif;
+}
+
+.maintenance {
+  padding-top: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.maintenance__title {
+  font-size: 1.375rem;
+  text-transform: uppercase; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-me__img-bottom {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.maintenance__subtitle {
+  margin-top: 0.5rem;
+  width: 470px;
+  font-family: 'OpenSans', sans-serif;
+}
+
+/* About me section styles end */
+
 /* SKILLS CONTAINER STYLES HERE */
 .skills {
   width: 100%;

@@ -152,7 +152,200 @@ header .content .img p {
 }
 /* berries finished */
 
-.contact {
+/* SKILLS CONTAINER STYLES HERE */
+.skills {
+  width: 100%;
+  margin: auto;
+  height: auto;
+  margin: 70px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+/* SKILLS TEXT BOX AND TEXT STYLES */
+.skills-text {
+  width: 404px;
+  height: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 8px solid #000000;
+}
+.skills-text p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.35538em;
+  color: #000000;
+}
+/* SKILSS BOXES STYLE */
+.skills-boxes {
+  width: 75%;
+}
+/* SKILLS OPTION NAME STYLES */
+.skills-boxes h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.18538em;
+  color: #000000;
+  margin: 75px 0;
+  display: inline-block;
+  margin-left: 6vw;
+}
+/* SKILLS NAME STYLES HERE */
+.skills-boxes p {
+  display: block;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.13538em;
+  color: #000000;
+}
+/* DIFFERENT STYLE IN FIRST SKILLS IMG BOX */
+.using-now_img_1 {
+  margin-bottom: 65px;
+}
+/* GENERAL BOX IS SKILLS IMG BOX STYLES HERE*/
+.skills-img-box {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+/* SKILLS IMG AND TEXT CONTAINER HERE */
+.tech {
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* IN IMG BOX PARAGRAF MARGIN STYLES */
+.using-now_img_1 p {
+  margin-top: 17px;
+}
+.using-now_img_2 p {
+  margin-top: 36px;
+}
+.learning_img p {
+  margin-top: 22px;
+}
+.other-skills_img p {
+  margin-top: 28px;
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .skills-boxes {
+    width: 100%;
+  }
+  .tech {
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+  .skills-text {
+    height: 68px;
+    width: 161px;
+  }
+  .skills-text p {
+    font-size: 14px;
+    line-height: 127.9%;
+    text-align: center;
+    letter-spacing: 0.43538em;
+  }
+  .skills-boxes h1 {
+    margin: 35px 0;
+    display: block;
+    text-align: center;
+  }
+  .learning_text, .other-skills_text{
+    display: none;
+  }
+  .using-now_img_1 {
+    margin-bottom: 0;
+  }
+  .skills-img-box p {
+    margin-top: 10px;
+  }
+  .skills-img-box:not(:first-child) {
+    display: none;
+  }
+  .tech:nth-child(4){
+    display: none;
+  }
+}
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  .skills-boxes {
+    width: 100%;
+  }
+  .tech {
+    width: 50%;
+    margin-bottom: 5vh;
+  }
+  .skills-text {
+    height: 80px;
+    width: 220px;
+  }
+  .skills-text p {
+    font-size: 29px;
+    line-height: 30px;
+  }
+  .skills-text p {
+    font-size: 23px;
+  }
+  .skills-boxes h1 {
+    margin: 30px 0;
+    display: block;
+    text-align: center;
+  }
+  .using-now_img_1 {
+    margin-bottom: 0;
+  }
+  .tech img {
+    width: 80px;
+    height: auto;
+  }
+  .mongo {
+    width: 50px !important;
+  }
+  .figma {
+    width: 60px !important;
+  }
+  .skills-img-box p {
+    margin-top: 15px;
+  }
+  .learning, .other-skills{
+    display: none;
+  }
+}
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .skills-boxes {
+    width: 90%;
+  }
+  .tech {
+    width: 25%;
+  }
+  .skills-text {
+    height: 90px;
+    width: 270px;
+  }
+}
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .skills-boxes {
+    width: 80%;
+  }
+  .tech {
+    width: 25%;
+  }
+}
+/* Solya Finished */
+contact {
   padding: 40px 0;
   font-family: sans-serif;
   background: radial-gradient(
@@ -280,201 +473,3 @@ header .content .img p {
   cursor: pointer;
   background-color: transparent;
 }
-
-/* SKILLS CONTAINER STYLES HERE */
-.skills {
-  width: 100%;
-  margin: auto;
-  min-height: 220vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-family: "Montserrat", sans-serif;
-}
-/* SKILLS TEXT BOX AND TEXT STYLES */
-.skills-text {
-  width: 404px;
-  height: 107px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 8px solid #000000;
-}
-.skills-text p {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 38px;
-  letter-spacing: 0.35538em;
-  color: #000000;
-}
-/* SKILSS BOXES STYLE */
-.skills-boxes {
-  width: 75%;
-}
-/* SKILLS OPTION NAME STYLES */
-.skills-boxes h1 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 37px;
-  letter-spacing: 0.18538em;
-  color: #000000;
-  margin: 75px 0;
-  display: inline-block;
-  margin-left: 6vw;
-}
-/* SKILLS NAME STYLES HERE */
-.skills-boxes p {
-  display: block;
-  margin: 0 auto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0.13538em;
-  color: #000000;
-}
-/* DIFFERENT STYLE IN FIRST SKILLS IMG BOX */
-.using-now_img_1 {
-  margin-bottom: 65px;
-}
-/* GENERAL BOX IS SKILLS IMG BOX STYLES HERE*/
-.skills-img-box {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-}
-/* SKILLS IMG AND TEXT CONTAINER HERE */
-.tech {
-  width: 20%;
-  margin: 0 auto;
-  text-align: center;
-}
-/* IN IMG BOX PARAGRAF MARGIN STYLES */
-.using-now_img_1 p {
-  margin-top: 17px;
-}
-.using-now_img_2 p {
-  margin-top: 36px;
-}
-.learning_img p {
-  margin-top: 22px;
-}
-.other-skills_img p {
-  margin-top: 28px;
-}
-/* Media Query for Mobile Devices */
-@media (max-width: 480px) {
-  .skills-boxes {
-    width: 100%;
-  }
-  .skills-text {
-    width: 60vw;
-    height: 20vh;
-  }
-  .skills-text p {
-    font-size: 27px;
-    line-height: 30px;
-  }
-  .tech {
-    width: 100%;
-    margin-bottom: 2vh;
-  }
-  .skills-text {
-    height: 68px;
-    width: 161px;
-  }
-  .skills-text p {
-    font-size: 14px;
-    line-height: 127.9%;
-    letter-spacing: 0.43538em;
-  }
-  .skills-boxes h1 {
-    margin: 20px 0;
-    display: block;
-    text-align: center;
-  }
-  .using-now_img_1 {
-    margin-bottom: 0;
-  }
-  .skills-img-box p{
-    margin-top: 10px;
-  }
-  .tech img{
-    width: 70px;
-    height: auto;
-  }
-  .mongo{
-    width: 50px !important;
-  }
-  .figma{
-    width: 50px !important;
-  }
-}
-/* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {
-  .skills-boxes {
-    width: 100%;
-  }
-  .tech {
-    width: 50%;
-    margin-bottom: 3vh;
-  }
-  .skills-text {
-    height: 80px;
-    width: 220px;
-  }
-  .skills-text p {
-    font-size: 29px;
-    line-height: 30px;
-  }
-  .skills-text p {
-    font-size: 23px;
-  }
-  .skills-boxes h1 {
-    margin: 30px 0;
-    display: block;
-    text-align: center;
-  }
-  .using-now_img_1 {
-    margin-bottom: 0;
-  }
-  .tech img{
-    width: 80px;
-    height: auto;
-  }
-  .mongo{
-    width: 50px !important;
-  }
-  .figma{
-    width: 60px !important;
-  }
-  .skills-img-box p{
-    margin-top: 15px;
-  }
-}
-/* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .skills-boxes {
-    width: 90%;
-  }
-  .tech {
-    width: 25%;
-  }
-  .skills-text {
-    height: 90px;
-    width: 270px;
-  }
-}
-/* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .skills-boxes {
-    width: 80%;
-  }
-  .tech {
-    width: 25%;
-  }
-}
-/* Solya Finished */

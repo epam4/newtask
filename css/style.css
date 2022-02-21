@@ -293,8 +293,8 @@ header .content .img p {
 }
 /* SKILLS TEXT BOX AND TEXT STYLES */
 .skills-text {
-  width: 35vw;
-  height: 20vh;
+  width: 404px;
+  height: 107px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,7 +380,37 @@ header .content .img p {
   }
   .tech {
     width: 100%;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
+  }
+  .skills-text {
+    height: 68px;
+    width: 161px;
+  }
+  .skills-text p {
+    font-size: 14px;
+    line-height: 127.9%;
+    letter-spacing: 0.43538em;
+  }
+  .skills-boxes h1 {
+    margin: 20px 0;
+    display: block;
+    text-align: center;
+  }
+  .using-now_img_1 {
+    margin-bottom: 0;
+  }
+  .skills-img-box p{
+    margin-top: 10px;
+  }
+  .tech img{
+    width: 70px;
+    height: auto;
+  }
+  .mongo{
+    width: 50px !important;
+  }
+  .figma{
+    width: 50px !important;
   }
 }
 /* Media Query for low resolution  Tablets, Ipads */
@@ -390,11 +420,39 @@ header .content .img p {
   }
   .tech {
     width: 50%;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
+  }
+  .skills-text {
+    height: 80px;
+    width: 220px;
   }
   .skills-text p {
     font-size: 29px;
     line-height: 30px;
+  }
+  .skills-text p {
+    font-size: 23px;
+  }
+  .skills-boxes h1 {
+    margin: 30px 0;
+    display: block;
+    text-align: center;
+  }
+  .using-now_img_1 {
+    margin-bottom: 0;
+  }
+  .tech img{
+    width: 80px;
+    height: auto;
+  }
+  .mongo{
+    width: 50px !important;
+  }
+  .figma{
+    width: 60px !important;
+  }
+  .skills-img-box p{
+    margin-top: 15px;
   }
 }
 /* Media Query for Tablets Ipads portrait mode */
@@ -404,6 +462,10 @@ header .content .img p {
   }
   .tech {
     width: 25%;
+  }
+  .skills-text {
+    height: 90px;
+    width: 270px;
   }
 }
 /* Media Query for Laptops and Desktops */

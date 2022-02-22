@@ -66,6 +66,30 @@ select {
   border-radius: 15px;
   font-size: 15px;
 }
+
+
+
+/* =============== language part================
+! ========================================= */
+
+
+.language {
+  color:#fff;
+  text-decoration: none;
+  font-size: 20px;
+  cursor:pointer;
+
+}
+.language:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
 /* navbar finished*/
 
 header .content {

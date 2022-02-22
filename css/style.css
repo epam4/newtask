@@ -853,19 +853,71 @@ li .title-item>p {
 /* Responsive for mobile */
 @media screen and (max-width:480px) {
 
-  /* Berries */
+  /* Header page */
+  header {
+    background-image: url(../assets/img/headerbg.png);
+    background-size: cover;
+  }
+
+  header .content {
+    display: flex;
+    align-items: center;
+
+  }
+
+  header .content .img {
+    display: none;
+  }
+
+  header .content .text {
+    color: #fff;
+    text-align: center;
+    margin: 20vh auto;
+  }
+
+  header .content h3 {
+    font-size: 25px;
+  }
+
+  header .content h1 {
+    font-size: 2rem;
+  }
+
+  header .content .text p {
+    color: #fff;
+  }
+
+  header .content .icons img {
+    border-radius: 100%;
+    background: #ffffff;
+  }
+
+  header .content .text p::after {
+    content: '';
+    top: 50%;
+    left: 30%;
+    width: 40vw;
+    height: 20px;
+    position: absolute;
+    background: url(../assets/icon/separatorWhite2.png) no-repeat center;
+  }
+
+  /* IT Berries */
   .container {
     width: 90% !important;
     margin: 0 auto;
   }
 
   .berries {
+    background: #1d1d1d url(../assets/icon/ITB.png) no-repeat top center;
     text-align: center;
+    background-size: 80% 90%;
   }
 
   .berries p {
     text-align: justify;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
 
   /* About Me */
@@ -879,16 +931,73 @@ li .title-item>p {
 
   .maintenance__subtitle {
     width: auto;
+    text-align: justify;
   }
 
   /* Portfolio */
-  .portfolio__title{
+  .portfolio__title {
     height: 194px;
     background: url(../assets/img/bgimg1.png);
+    background-size: cover;
   }
+
   .portfolio__title>span {
     height: 67px;
     width: 161px;
     line-height: 65px;
+  }
+
+  .portfolio__example ul {
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .portfolio__example ul li {
+    height: 219px;
+    flex-basis: 100%;
+  }
+
+  .portfolio__example ul li:nth-child(1) {
+    display: none;
+  }
+
+  .portfolio__example ul li:nth-child(5) {
+    display: none;
+  }
+
+  .portfolio__example ul li:nth-child(6) {
+    display: none;
+  }
+
+  .portfolio__footer {
+    height: 50px;
+  }
+
+  /* Contact Section */
+  .contact-head h2 {
+    border: 8px solid black;
+  }
+
+  .contact-head p {
+    width: 90%;
+  }
+
+  .contact-head .contact-head__img {
+    width: 40%;
+  }
+
+  .contact .form .option {
+    width: 70%;
+  }
+
+  .contact .form .message {
+    width: 70%;
+
+  }
+
+  .form input[type="submit"] {
+    width: 40vw;
   }
 }

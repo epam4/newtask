@@ -147,11 +147,11 @@ header .content .img img {
 }
 
 header .content .img p {
-  /* position: absolute; */
-  /* bottom: 20px; */
-  /* right: 40%; */
-  /* width: 30%; */
-  /* font-size: 15px; */
+  position: absolute;
+  bottom: 20px;
+  right: 40%;
+  width: 30%;
+  font-size: 15px;
 }
 
 /* header finished */
@@ -867,7 +867,44 @@ li .title-item>p {
 header nav img.logo.whitelogo {
   display: none;
 }
+/* ------- footer start -------- */
+footer{
+  width: 100%;
+  height: 250px;
+  background: #1A1A1A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer__main{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+footer .footer__main h3{
+font-family: Montserrat;
+font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: 0.18538em;
+color: #FFFFFF;
+margin: 10px 0 30px 0;
+}
+footer .footer__main h4{
+font-family: Nunito;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+color: #FFFFFF;
+margin-top: 40px;
+}
+footer .footer__main h4 span{
+  font-weight: 300;
+  font-style: italic;
+}
+/* ------- footer end -------- */
 /* Responsive for Tablets  */
 @media screen and (max-width:768px) {
   .container {
@@ -1092,4 +1129,9 @@ header nav img.logo.whitelogo {
     width: 40vw;
   }
   /* Contact Section End */
+  /* ----- footer start ----- */
+  footer .footer__main h4{
+    padding-left: 20px;
+  }
+  /* ----- footer end ----- */
 }

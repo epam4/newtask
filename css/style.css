@@ -840,6 +840,34 @@ li .title-item>p {
   color: #fff;
 }
 
+/* Navbar burger menu start */
+.burger {
+  display: none;
+}
+
+.burger .burgerClose {
+  display: none;
+}
+
+.burgerClose {
+  height: 27px;
+}
+
+.burger.toggle .burgerClose {
+  display: block;
+}
+
+.burger.toggle .burgerOpen {
+  display: none;
+}
+
+/* Navbar burger menu finish */
+
+
+header nav img.logo.whitelogo {
+  display: none;
+}
+
 /* Responsive for Tablets  */
 @media screen and (max-width:768px) {
   .container {
@@ -853,12 +881,63 @@ li .title-item>p {
 /* Responsive for mobile */
 @media screen and (max-width:480px) {
 
-  /* Header page */
+  /* Navbar Start */
+  .burger {
+    display: block;
+  }
+
+  header nav img.logo {
+    display: none;
+  }
+
+  header nav img.logo.whitelogo {
+    display: block;
+  }
+
+  header nav ul {
+    display: none;
+  }
+  header nav ul.nav-links{
+    top: 100%;
+  }
+  header nav ul.nav-links.nav-active{
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    text-align: center;
+  }
+  .nav-links li{
+    width: 100%;
+    padding: 12px;
+    background-color: #00000066;
+  }
+  .nav-links button{
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0;
+  }
+  .nav-links .language{
+    padding: 12px;
+    width: 100%;
+    background-color: #00000066;
+  }
+
+  /* Navbar End */
+  /* Header Section Start */
   header {
     background-image: url(../assets/img/headerbg.png);
     background-size: cover;
   }
-
+ header nav {
+   padding: 8px 0;
+ }
   header .content {
     display: flex;
     align-items: center;
@@ -872,11 +951,13 @@ li .title-item>p {
   header .content .text {
     color: #fff;
     text-align: center;
-    margin: 20vh auto;
+    margin: 22vh auto;
   }
 
   header .content h3 {
     font-size: 25px;
+    padding-top: 36px;
+    padding-bottom: 15px;
   }
 
   header .content h1 {
@@ -902,7 +983,8 @@ li .title-item>p {
     background: url(../assets/icon/separatorWhite2.png) no-repeat center;
   }
 
-  /* IT Berries */
+  /* Header Section End */
+  /* IT Berries Section Start*/
   .container {
     width: 90% !important;
     margin: 0 auto;
@@ -920,7 +1002,14 @@ li .title-item>p {
     margin: 0 auto;
   }
 
-  /* About Me */
+  /* IT Berries Section End */
+  /* About Me Section Start*/
+  .about-me__action{
+    padding: 18px;
+    font-size: 14px;
+    width: initial;
+    height: initial;
+  }
   .about-me__title {
     text-align: left;
   }
@@ -934,7 +1023,8 @@ li .title-item>p {
     text-align: justify;
   }
 
-  /* Portfolio */
+  /* About Me Section End */
+  /* Portfolio Section Start*/
   .portfolio__title {
     height: 194px;
     background: url(../assets/img/bgimg1.png);
@@ -975,7 +1065,8 @@ li .title-item>p {
     height: 50px;
   }
 
-  /* Contact Section */
+  /* Portfolio Section End */
+  /* Contact Section Start*/
   .contact-head h2 {
     border: 8px solid black;
   }
@@ -1000,4 +1091,5 @@ li .title-item>p {
   .form input[type="submit"] {
     width: 40vw;
   }
+  /* Contact Section End */
 }
